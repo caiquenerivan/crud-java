@@ -15,9 +15,11 @@ public class Product {
     private String id;
     private String nome;
     private Double price_in_cents;
+    private Boolean active;
 
     public Product(RequestProduct requestProduct){
         this.nome = requestProduct.nome();
         this.price_in_cents = requestProduct.price_in_cents();
+        this.active = true;
     }
 }
